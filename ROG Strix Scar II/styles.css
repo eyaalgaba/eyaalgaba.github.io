@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    background: url("strixscarii/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 5rem;
+    font-family: 'Blanka', sans-serif;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding-top: 0px;
+    letter-spacing: 2px;
+    
+}
+
+h1 {
+    font-size: 400%;
+    font-family: "Modular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding-top: 0px; 
+    letter-spacing: 4px;
+    margin-top: -5vh;
+    margin-bottom: 4vh;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    background: url("strixscarii/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Blanka', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0; 
+    padding-top: -1rem; 
+}
+
+p1 {
+    font-size: 2rem;
+    font-family: "Modular";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    letter-spacing: 2px;
+    margin-top: 0; 
+    padding-top: 35rem; 
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    background: url("strixscarii/3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.performance {
+    font-size: 4rem;
+    font-family: 'Blanka', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0; 
+    padding-top: -1rem; 
+}
+
+.stats {
+    font-size: 4.5rem;
+    font-family: "Modular";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0; 
+    padding-top: 3rem; 
+}
+
+.windows {
+    font-size: 6.5rem;
+    font-family: "Modular";
+    color: rgb(255, 0, 0);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0; 
+    padding-top: 2.6rem; 
+    font-weight: bold;
+}
