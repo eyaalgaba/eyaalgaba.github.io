@@ -46,7 +46,7 @@ var lines = [" “World divided!” ", " “Off your feet!” ", " “Open up th
 
 
 var pics = ["Astra.png", "Breach.png", "Brimstone.png", "Chamber.png", "Cypher.png", "Clove.png", "Deadlock.png", "Fade.png", "Gekko.png", 
-    "Harbor.png", "Iso.png", "Jett.png", "Kay o.png", "Killjoy.png", "Neon.png", "Omen.png", "Pheonix.png", "Raze.png", "Reyna.png", "Sage.png", "Skye.png", 
+    "Harbor.png", "Iso.png", "Jett.png", "Kay O.png", "Killjoy.png", "Neon.png", "Omen.png", "Pheonix.png", "Raze.png", "Reyna.png", "Sage.png", "Skye.png", 
     "Sova.png", "Viper.png", "Vyse.png", "Yoru.png",];
 
 
