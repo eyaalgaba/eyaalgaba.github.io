@@ -14,7 +14,7 @@ const loadTitan = async () =>{
         `
         <div class="col-12 col-sm-12 col-md-4 col-xl-3 profile">
                 <!-- Display 1 -->
-                <a href="viewPage.html"><button class="btn" style="background-color: transparent; border-radius: 30px;"><div class="card align-items-center profileCard mx-auto"
+                <a href="viewPage.html?result=${character.name}"><button class="btn" style="background-color: transparent; border-radius: 30px;"><div class="card align-items-center profileCard mx-auto"
                     style="height: 287px; width: 237px; background-color: #4F4F4F;">
 
                     <!-- image -->

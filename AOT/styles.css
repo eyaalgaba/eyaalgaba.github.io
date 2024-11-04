@@ -174,19 +174,12 @@ body,
     padding-top: 13%;
 }
 
-.nameSection {
-    max-width: auto; height: 150px
-}
-
-.charName {
+.viewName {
     font-size: 40px;
     font-family: 'Goudy Old Style', sans-serif;
     color: blue;
     text-align: center;
     padding-top: 30px ;
-}
-*{
-    overflow-x: hidden;
 }
 
 .viewPicture {
