@@ -1,74 +1,134 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+.navbar {
+    background-color: #021200;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.nav-link {
+    font-size: 25px !important;
+    color: white !important; 
+    font-family: "Baskervville SC", serif;
+    padding-right: 20px !important;
+}
+
+.navbar-nav {
+    padding-right: 40px !important;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.front {
+    margin-top:110px !important;
+}
+
+.logoB {
+    height: 600px !important;
+    width: 800px !important;
     align-items: center;
-    height: 100vh;
-    background-image: url('bg.png');
-    background-size: cover;
-    background-position: center;
-    
 }
 
-.container {
-    text-align: center;
+.fName{
+    font-family: "Baskervville SC", serif;
+    text-align: end;
+    color: white;
+    padding-top:190px ;
+    font-size: 100px;
 }
 
-header h1 {
-    text-align: center; padding-top: 1px;
-    font-size: 6rem;
-    color: #aa7aed;
-    text-shadow: 4px 3px 1px rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
+.lName{
+    font-family: "Baskervville SC", serif;
+    text-align: start;
+    color: white;
+    padding-top:190px ;
+    font-size: 100px;
 }
 
-header h2 {
-    font-size: 2rem;
-    color: #aa7aed;
-    margin-top: 60px;
-    letter-spacing: 2px;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+@media (max-width: 768px) {
+    .fName{
+        padding-top: 0px; 
+    }
+    .lName{
+        padding-top:0px;
+    }
+    .logoB {
+        height: 500px !important;
+    }
+}
+
+.greeting {
+    color: white;
+    font-size: 80px;
+    font-family: "Crimson Text", serif;
+    font-weight: bolder;
+
+}
+
+.myName {
+    color: #89F09C;
+    font-family: "Crimson Text", serif;
+    font-weight: bolder;
+}
+
+* {
+    overflow-x: hidden;
+}
+
+.profession {
+    color: white;
+    font-size: 50px;
+    font-family: "Crimson Text", serif;
+    font-weight: 800px;
+}
+
+.devCont {
+    color: #89F09C;
+    font-family: "Crimson Text", serif;
+    font-weight: 800px;
+}
+
+.space {
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 800px;
+}
+
+.graphic {
+    color: white;
+    font-family: "Crimson Text", serif;
+    font-weight: 800px;
+}
+
+.design {
+    color: #89F09C;
+    font-family: "Crimson Text", serif;
+    font-weight: 800px;
+}
+
+.information {
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500px;
 }
 
 .projects {
-    margin-top: 90px;
+    font-family: "Baskervville SC", serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+
 }
 
-button {
-    background-color: rgba(255, 255, 255, 0.567);
-    border: none;
-    border-radius: 50px;
-    padding: 10px 25px;
-    margin: 0px 10px;
-    font-size: 1.50rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #52be8c;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.349);
-    box-shadow: 0px 4px 6px rgba(73, 73, 73, 0.458);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.tag {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-top: 60px;
-    letter-spacing: 2px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-button:hover {
-    background-color: #ffffff;
-}
-
-a {
-text-decoration: none;
-color: #52be8c;
+.pro {
+    font-family: "Crimson Text", serif !important;
+    font-size: 30px !important;
 }
