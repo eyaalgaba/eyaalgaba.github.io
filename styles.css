@@ -32,7 +32,7 @@
 
 .logoB {
     height: 600px !important;
-    width: 800px !important;
+    width: 600px !important;
     align-items: center;
 }
 
@@ -54,10 +54,14 @@
 
 @media (max-width: 768px) {
     .fName{
-        padding-top: 0px; 
+        padding-top: 0px;
+        font-size: 90px;
+        text-align: center;
     }
     .lName{
         padding-top:0px;
+        font-size: 90px;
+        text-align: center;
     }
     .logoB {
         height: 500px !important;
@@ -131,4 +135,18 @@
 .pro {
     font-family: "Crimson Text", serif !important;
     font-size: 30px !important;
+}
+
+.logoAnimate {
+    animation: 3s flip-animation infinite linear;
+}
+
+@keyframes flip-animation {
+    0%{transform:rotateY(0);}
+    100%{transform:rotateY(360deg);}
+}
+
+.projectCard:hover {
+    box-shadow: 10px 10px 10px 10px #119D2B;
+    margin-bottom: 20px;
 }
