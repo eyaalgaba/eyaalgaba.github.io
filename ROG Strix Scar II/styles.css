@@ -22,6 +22,13 @@
     color: white;
 }
 
+.backButton{
+    height: 40px !important;
+    width: 70px !important;
+    background-color: rgb(96, 0, 0) !important;
+}
+
+
 .front {
     margin-top:110px !important;
 }

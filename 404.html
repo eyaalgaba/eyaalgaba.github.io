@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=" X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | You're Lost</title>
+    <link rel="icon" href="Imgs/logoS.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Baskervville:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Baskervville:ital@0;1&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            padding: 1rem;
+        }
+
+        .error {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+        }
+
+        .help {
+            font-family: "Roboto", sans-serif;
+        }
+
+
+        @media (max-width: 768px) {
+            .error {
+                font-size: 2rem;
+            }
+
+            .help {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .error {
+                font-size: 1.5rem;
+            }
+
+            .help {
+                font-size: 0.9rem;
+            }
+        }
+
+        .backButton{
+            background-color: rgb(255, 255, 255);
+            height:50px !important;
+            border-radius: 10px;
+            color: #00460D;
+
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay muted loop playsinline aria-hidden="true">
+        <source src="Imgs/404.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1 class="error">Error 404</h1>
+        <p class="help">Oh No! Somethings wrong. Click the button to go back.</p>
+        <a href="index.html"><button class="backButton">Back to Home</button></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -1,189 +1,82 @@
+.background{
+    object-fit: cover;
+}
+
+/* Navigation Bar Settings */
+.nav-item{
+    padding: 10px !important;
+}
+.nav-link{
+    font-size: 25px !important;
+    color: #875361 !important;
+    font-family: "Playfair Display", serif;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.backButton{
+    height: 40px !important;
+    width: 70px !important;
+    background-color: #875361 !important;
+}
+
+#navBar.scrolled{
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-expanded {
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+@media (max-width: 780px){
+    .logo{
+        width: 50px;
+    }
+    .nav-link{
+        font-size: 15px !important;
+    }
+    .japan {
+        font-size: 45px !important;
+    }
+}
+
+/* About Page */
+.aboutName {
+    text-align: center;
+    font-size: 5vw;
+    color: #875361;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-html{
-    scroll-behavior: smooth;
-}
-header {
-    z-index: 999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-    transition: 0.5s ease;
-    
+overflow-x:hidden;
 }
 
-header .navigation {
-   position: fixed;
-
+.learn {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    font-family: "Playfair Display", serif;
 }
 
-header .navigation .navigation-items a{
-    position:relative;
-    color:#A66277;
-    font-size: 1em;
-    text-decoration: none;
-    margin-left: 30px;
-    transition: 0.3s;
+.jpName {
+    color: rgb(172, 11, 11);
     font-weight: 600;
-    padding-top: 5vh;
 }
 
-header .navigation .navigation-items a:before {
-    content: '';
-    position:fixed;
-    background: #A66277;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s ease;
-}
-
-header .navigation .navigation-items a:hover:before {
-    width: 100%;
-}
-
-.brand {
-    width: 6vw;
-    position: fixed;
-    padding-top: 5vh;
-    margin-left: -5vw;
-
-}
-
- .container-fluid {
-    padding: 0;
-    width: 100%;
-}
-
-.background-img {
-    position: relative;
-}
-
-.welcome {
-    font-size: 4vw;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 700;
-    color: #A66277;
+.information {
+    font-size: 30px;
+    color: white;
     text-align: left;
-    padding-top: 10vw;
-    margin-inline-start: 2vw;
-    position: absolute;
-    overflow-y: hidden;
-  
-}
-
-.japan {
-    font-size: 12vw;
-    font-family: "Inknut Antiqua", system-ui;
-    color: #ffffff;
-    text-align: left;
-    padding-top: 15vw;
-    margin-inline-start: 6vw;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #A66277;
-    position: absolute;
-    overflow-y: hidden;
-   
-}
-
-.aboutPage {
-    padding: 0;
-    width: 100%; 
-}
-
-.aboutPage .about {
-    font-size: 8vh;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 700;
-    color: #A66277;
-    padding-top: 1vw;
-    position: absolute;
-    overflow-y: hidden;
-    text-align: center;
-  
-}
-
-.content .learn {
-    font-size: 2vw;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 700;
-    color: #C73965;
-    padding-top: 6vw;
-    margin-inline-start: 8vw;
-    position: absolute;
-    overflow-y: hidden;
-    text-align: left;
-    line-height: 4vw;
-  
-}
-
-.content .japanPic {
-    position:absolute;
-    width: 40vw;
-    padding-top: 5vh;
-    align-items: center;
-}
-
-.content .info {
-    font-size: 1.2vw;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 400;
-    color: #A66277;
-    padding-top: 14vw;
-    margin-inline-start: 15vh;
-    line-height: 1vw;
-    position: absolute;
-    overflow-y: hidden;
-    text-align: left;
-    line-height: 2vw;
-  
-}
-
-.galleryPage .gallery {
-    font-size: 8vh;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 700;
-    color: #A66277;
-    padding-top: 1vw;
-    position: absolute;
-    overflow-y: hidden;
-    text-align: center;
-  
-}
-
-.card {
-    margin-top: 7vh;
-}
-
-.mapPage .map {
-    font-size: 8vh;
-    font-family: "Inknut Antiqua", system-ui;
-    font-weight: 700;
-    color: #A66277;
-    padding-top: 1vw;
-    position: absolute;
-    overflow-y: hidden;
-    text-align: center;
-  
-}
-.japanMap {
-    width: 100vw;
-    height: 100vh;
-}
-.japanMap .jpMap {
-    position:absolute;
-    width: 60vw;
-    margin-inline-start: 45vh;
-    
-
+    font-family: "Roboto", sans-serif;
 }
