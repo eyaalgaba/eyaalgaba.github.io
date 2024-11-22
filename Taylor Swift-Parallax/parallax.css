@@ -1,0 +1,159 @@
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*Key Art default settings*/
+
+.keyart,
+.keyart_layer {
+	height: 100px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.keyart {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.keyart_layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+#keyart-15 {
+	background-image: url(img/parallax15.png);
+}
+
+#keyart-0 {
+	background-image: url(img/parallax0.png);
+}
+
+#keyart-1 {
+	background-image: url(img/parallax1.png);
+}
+
+#keyart-2 {
+	background-image: url(img/parallax2.png);
+}
+
+#keyart-3 {
+	background-image: url(img/parallax4.png);
+}
+
+#keyart-4 {
+	background-image: url(img/parallax3.png);
+}
+
+#keyart-5 {
+	background-image: url(img/parallax5.png);
+}
+
+#keyart-6 {
+	background-image: url(img/parallax6.png);
+}
+
+#keyart-7 {
+	background-image: url(img/parallax7.png);
+}
+
+#keyart-8 {
+	background-image: url(img/parallax8.png);
+}
+
+#keyart-9 {
+	background-image: url(img/parallax9.png);
+}
+
+#keyart-10 {
+	background-image: url(img/parallax10.png);
+}
+
+#keyart-11 {
+	background-image: url(img/parallax11.png);
+}
+
+#keyart-12 {
+	background-image: url(img/parallax12.png);
+}
+
+#keyart-13 {
+	background-image: url(img/parallax13.png);
+}
+
+#keyart-14 {
+	background-image: url(img/parallax14.png);
+}
+
+
+#keyart-scrim {
+	opacity: 0;
+}
+
+/* Footer Settings */
+footer {
+	text-align: center !important;
+	padding: 1rem !important;
+	background-color: #000 !important;
+	color: white !important;
+	font-size: 0.9rem !important;
+	font-family: "Playfair Display", serif !important;
+}
+
+/* Container Settings */
+.container-fluid {
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+/* Row Settings */
+.row {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	.keyart {
+		height: 60vh;
+	}
+
+	.keyart_layer {
+		height: 60vh;
+	}
+
+
+}
