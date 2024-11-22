@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+ *{
+    padding: 0 !important;
+    margin: 0 !important;
+} 
+/* Navigation Bar Settings */
+.nav-item{
+    padding-top:20px !important;
+    padding-right: 50px !important;
+    color:pink !important;
+    font-family: "Lora", serif;
+    font-size: 20px !important;
+    font-weight: 700 !important; 
+}
+.nav-item:hover{
+    color:rgb(255, 255, 255) !important;
+}
+
+.backButton{
+    height: 40px !important;
+    width: 90px !important;
+    background-color: #f84bb0 !important;
+}
+#navBar.scrolled{
+    background-color:pink;
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+ 
+}
+
+.videoBackground {
+    position: absolute; 
+    width: 300%;
+    height: 100%;
+   
+}
+
+.nameContainer{
+    position: absolute;
+    text-align: center;
+    overflow: hidden; 
+}
+
+@media (max-width: 1000px) {
+    .videoContainer{
+        aspect-ratio: 9/16;
+    } 
+}
+
+p {
+    font-family: "Simonetta", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 100px;
+    color: pink;
+}
+
+  .brand {
+    font-size: 3rem;
+    color: rgb(133, 0, 86);
+    font-family: "Simonetta", serif;
+    font-weight: bold;
+  }
+  
+  #videos {
+    background-color: pink;
+    color: white;
+    text-align: left;
+    font-family: "Simonetta", serif;
+    padding: 50px 0;  
+  }
+  
+  #videos h2 {
+    font-size: 3rem;
+    color: rgb(156, 5, 86);
+    font-family: "Simonetta", serif;
+    font-weight: bold;
+  }
+  
+  .card iframe {
+    width: 100%;
+    height: 250px;
+  }
+  
+ 
+  
+  

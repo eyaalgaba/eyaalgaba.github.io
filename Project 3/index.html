@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Wiki</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Home/Val.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HOME PAGE -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navContainer fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="Home/Logo.png" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="agents.html">AGENTS</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="maps.html">MAPS</a>
+          </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="../index.html"><button class="btn custom-btn backButton"><img
+            class="img-fluid" src="pictures/Back.png"></button></a>
+          </li>
+
+          <!-- Dark mode toggle -->
+          <li class="nav-item">
+            <a class="nav-link dark-mode-toggle" id="darkModeToggle">
+              <img id="darkModeIcon" src="Home/LM.png" alt="Mode Icon" style="width: 40px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="iframe-container" id="home">
+    <div style="padding-bottom: 56.25%; position: relative;"><iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/lq4_o0cV_Gs?autoplay=1&color=white&controls=0&disablekb=1&loop=1&modestbranding=1&mute=1&playlist=lq4_o0cV_Gs&rel=0"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+        style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><small>Powered by <a
+            href="https://embed.tube/embed-code-generator/youtube/">youtube embed video</a> generator</small></iframe>
+    </div>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <h1>VALORANT</h1>
+      <p>A 5v5 character-based tactical shooter</p>
+      <a href="https://playvalorant.com/en-us/download/" class="play-button" target="_blank">PLAY FOR FREE</a>
+    </div>
+  </div>
+
+
+  <!-- ABOUT PAGE -->
+  <div class="container my-5" id="about">
+    <div class="row">
+
+      <!-- poster Image -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="About/valo poster.jpg" class="img-fluid" alt="Valorant Poster">
+      </div>
+
+      <!-- Info -->
+      <div class="col-md-6">
+        <h2 class="display-5 valorant-font">VALORANT</h2>
+        <div class="container mb-3 genre">
+          <span class="badge mx-1 text">Action</span>
+          <span class="badge mx-1 text">Shooting</span>
+          <span class="badge mx-1 text">Sci-Fi</span>
+          <span class="badge mx-1 text">Multiplayer</span>
+        </div>
+
+        <p id="aboutText" class="about-text"> Valorant is a free-to-play first-person tactical hero shooter developed
+          and published by Riot Games. The
+          game's development started in 2014 and was teased under the codename Project A in October 2019. A closed beta
+          period began with limited access on April 7, 2020, followed by a release on June 2, 2020. It was originally
+          designed for Windows only,<span id="dots">...</span><span id="more">but support for the Xbox Series X/S
+          and PlayStation 5 was added in June 2024, albeit without cross-play between PC and console clients. Valorant
+          takes inspiration from the Counter-Strike series, borrowing several mechanics such as the buy menu, spray
+          patterns, and inaccuracy while moving.</span></p>
+
+        <button onclick="myFunction()" id="myBtn" class="btn btn-outline-primary">Read more</button>
+      </div>
+    </div>
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"> </script>
+</body>
+
+</html>

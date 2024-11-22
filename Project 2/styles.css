@@ -1,0 +1,82 @@
+.background{
+    object-fit: cover;
+}
+
+/* Navigation Bar Settings */
+.nav-item{
+    padding: 10px !important;
+}
+.nav-link{
+    font-size: 25px !important;
+    color: #875361 !important;
+    font-family: "Playfair Display", serif;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.backButton{
+    height: 40px !important;
+    width: 70px !important;
+    background-color: #875361 !important;
+}
+
+#navBar.scrolled{
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-expanded {
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+@media (max-width: 780px){
+    .logo{
+        width: 50px;
+    }
+    .nav-link{
+        font-size: 15px !important;
+    }
+    .japan {
+        font-size: 45px !important;
+    }
+}
+
+/* About Page */
+.aboutName {
+    text-align: center;
+    font-size: 5vw;
+    color: #875361;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+* {
+overflow-x:hidden;
+}
+
+.learn {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+}
+
+.jpName {
+    color: rgb(172, 11, 11);
+    font-weight: 600;
+}
+
+.information {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
