@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWFFEE | Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="../A03/imgs/Logos.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .navy {
+            background-color: #F9C26C;
+            box-shadow: 2px 2px 5px #353535;
+        }
+
+        .navToggle {
+            background-color: #f5d6a4;
+        }
+
+        .navButtons {
+            color: #39A1FF;
+            font-weight: bold;
+            font-size: clamp(16px, 5vw, 20px);
+        }
+
+        .navButtons:hover {
+            color: #E3E0DD;
+        }
+
+        .backBtn {
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-family: "Inter", sans-serif;
+            font-weight: bolder;
+            font-size: clamp(16px, 7vw, 40px);
+            color: #006FB7;
+        }
+
+        h4 {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: clamp(5px, 4vw, 20px);
+            color: #006FB7;
+        }
+
+        .info {
+            font-family: "Inter", sans-serif;
+            font-weight: 200px;
+            font-size: clamp(10px, 5vw, 20px);
+            color: #006FB7;
+            text-align: center;
+        }
+
+        .shopBtn {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: clamp(8px, 3vw, 20px);
+            color: #FEFEFE;
+            text-align: center;
+            background-color: #f08c00;
+        }
+
+        h3 {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: clamp(14px, 5vw, 40px);
+            text-align: center;
+            color: #f08c00;
+        }
+
+        .cardBrand {
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            font-size: clamp(16px, 3vw, 10px);
+            color: #FEFEFE;
+            color: #006FB7;
+        }
+
+        .cardText {
+            font-family: "Inter", sans-serif;
+            font-weight: 100px;
+            font-size: clamp(16px, 3vw, 8px);
+            color: #FEFEFE;
+            color: #006FB7;
+        }
+
+        .cardPrice {
+            font-family: "Inter", sans-serif;
+            font-weight: bolder;
+            font-size: clamp(16px, 3vw, 8px);
+            color: #FEFEFE;
+            color: #006FB7;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg navy">
+        <div class="container-fluid">
+            <a href="../A03/index.html"> <img class="img-fluid navBarLogo p-3" src="../A03/imgs/navlogo.png"> </a>
+
+            <button class="navbar-toggler navToggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link navButtons " href="">HOME</a>
+                    <a class="nav-item nav-link navButtons " href="../A03/cart.html">CART</a>
+                    <a class="nav-item nav-link backBtn" href="../../appDevFolder.html"><button
+                            class="btn custom-btn backButton"><img class="img-fluid"
+                                src="../A03/imgs/back.png"></button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Context -->
+    <div class="container-fluid">
+
+        <div class="row" style="background-color: #F9C26C; opacity: 70%;">
+
+            <div class="col-12 d-flex justify-content-center align-items-center p-4">
+                <h1>Coffee for Dogs</h1>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center align-items-center p-0">
+                <h4>A coffee alternative that is safe for your pup!</h4>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center align-items-center p-0">
+                <p class="info">Crafted out of goats milk, medicinal mushrooms, and other 100% natural flavors. Packed
+                    with <br>health benefits from nutrient dense ingredients & calming properties. No caffeine.</br></p>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center align-items-center p-2">
+                <a><button class="btn custom-btn shopBtn">Shop Pawffee!</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Advertisement -->
+    <div class="container-fluid p-0 m-0">
+        <img class="img-fluid w-100" src="../A03/imgs/Ads.png">
+    </div>
+
+    <!-- Title -->
+    <div class="container-fluid d-flex justify-content-center align-items-center p-2">
+            <h3>Products</h3>
+    </div>
+
+    <!-- products -->
+        <div class="container-fluid mainContent">
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center p-3">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="../A03/imgs/pro1.png" class="card-img-top" alt="image unavailable">
+
+                        <div class="card-body">
+
+                            <h5 class="cardBrand">
+                                Pawffee
+                            </h5>
+
+                            <p class="cardText">
+                                Coffee Powder
+                            </p>
+
+                            <p class="cardPrice">
+                                ₱420.00
+                            </p>
+
+                            <a href="#" class="btn btn-custom" style="background-color: #E3E0DD; color: #f08c00;">
+                                Add to cart
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center p-3">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="../A03/imgs/pro2.png" class="card-img-top" alt="image unavailable">
+
+                        <div class="card-body">
+
+                            <h5 class="cardBrand">
+                                Pawffee
+                            </h5>
+
+                            <p class="cardText">
+                                Dog Bowl
+                            </p>
+
+                            <p class="cardPrice">
+                                ₱280.00
+                            </p>
+
+                            <a href="#" class="btn btn-custom" style="background-color: #E3E0DD; color:#f08c00;">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center p-3">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="../A03/imgs/pro3.png" class="card-img-top" alt="image unavailable">
+
+                        <div class="card-body">
+
+                            <h5 class="cardBrand">
+                                Pawffee
+                            </h5>
+
+                            <p class="cardText">
+                                T-shirt
+                            </p>
+
+                            <p class="cardPrice">
+                                ₱350.00
+                            </p>
+
+                            <a href="#" class="btn btn-custom" style="background-color: #E3E0DD; color:#f08c00;">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center p-3">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="../A03/imgs/pro4.png" class="card-img-top" alt="image unavailable">
+
+                        <div class="card-body">
+
+                            <h5 class="cardBrand">
+                                Pawffee
+                            </h5>
+
+                            <p class="cardText">
+                                4pcs Stickers
+                            </p>
+
+                            <p class="cardPrice">
+                                ₱140.00
+                            </p>
+
+                            <a href="#" class="btn btn-custom" style="background-color: #E3E0DD; color:#f08c00;">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <!-- Footer -->
+    <div class="row Footer"  style="background-color: #F9C26C;"> 
+        <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0" style="padding-left: 50px;">
+                    <img src="../A03/imgs/navlogo.png" alt="logo" style="width:50px; height:35px;">
+                </a>
+                <span class="mb-3 mb-md-0" style="color:#006FB7"><b>© 2025 Pawffee. All Rights
+                        Reserved.</b></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
