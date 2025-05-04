@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mysty Bloom | Flower Shop</title>
+    <link rel="icon" href="../A04/imgs/tabLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #55996F;
+        }
+
+        .navbar-custom {
+            background-color: #FDF3EE;
+        }
+
+        .form-control {
+            border: 2px solid #55996F;
+            border-radius: 50px;
+            padding-left: 1rem;
+            padding-right: 2.5rem;
+        }
+
+        .input-group-text {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 300px;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        .custom-button {
+            width: 170px !important;
+            color: #55996F !important;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold !important;
+            border-radius: 38px !important;
+            border-color: rgb(85, 153, 111, 67%) !important;
+        }
+
+        .custom-button.content {
+            width: 150px;
+        }
+
+        .custom-button:hover {
+            background-color: rgb(85, 153, 111, 67%);
+            cursor: pointer;
+            color: #FDF3EE !important;
+            border-color: rgb(85, 153, 111, 67%);
+        }
+
+        .topcontainer {
+            height: 18dvh;
+            background-color: #FDF3EE !important;
+        }
+
+        .categories {
+            width: fit-content;
+            overflow-y: hidden !important;
+        }
+
+        .maincontainer {
+            height: 75dvh;
+            background-color: #FDF3EE !important;
+        }
+
+        .card-text {
+            font-family: "Montserrat", sans-serif;
+            color: #55996F;
+            text-align: center;
+            font-optical-sizing: auto;
+        }
+
+        .contentCard:hover {
+            cursor: pointer !important;
+            background-color:#FDF3EE !important;
+        }
+
+        .card-receipt{
+            background-color:#FDF3EE !important;
+        }
+
+        .text{
+            font-family: "Montserrat", sans-serif;
+            color: #55996F;
+        }
+
+        .productOutcome{
+            font-family: "Montserrat", sans-serif;
+            color: #55996F;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom px-4 py-3">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <img src="../A04/imgs/navLogo.png" alt="Mystic Bloom Logo" class="logo">
+
+            <!-- Search bar -->
+            <form class="d-flex search-wrapper" role="search">
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                <span class="input-group-text">
+                    <i class="bi bi-search text-success"></i>
+                </span>
+            </form>
+
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col pb-3">
+                        <div class="card overflow-scroll p-3 topcontainer">
+                            <div class="d-flex flex-start flex-row categories" id="categories">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card overflow-scroll p-3 maincontainer">
+                            <div class="d-flex flex-start flex-row flex-wrap" id="maincontainer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card card-receipt p-3 overflow-scroll" style="height: 100%;">
+                    <div id="receipt">
+                        <div><b class="text">Product</b></div>
+
+                    </div>
+                    <div class="mt-4 d-flex flex-row justify-content-between">
+                        <div><b class="text">TOTAL</b></div>
+                        <div><b class="text" id="totalValue">0</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var products = [
+            {
+                "category": "Focal Flowers",
+                "image": "../A04/imgs/navFocal.png",
+                "contents": [
+                    {
+                        "isAvailable": true,
+                        "image": "focalH.png",
+                        "name": "Hydrangea",
+                        "code": "Hydra",
+                        "price": 666.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "focalL.png",
+                        "name": "Lilies",
+                        "code": "Lily",
+                        "price": 270.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "focalP.png",
+                        "name": "Peonies",
+                        "code": "Pons",
+                        "price": 222.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "focalR.png",
+                        "name": "Roses",
+                        "code": "Rosa",
+                        "price": 250.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "focalS.png",
+                        "name": "Sunflower",
+                        "code": "Sunny",
+                        "price": 300.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "focalT.png",
+                        "name": "Tulips",
+                        "code": "Tule",
+                        "price": 290.00
+                    }
+                ]
+            },
+            {
+                "category": "Filler Flowers",
+                "image": "../A04/imgs/navFiller.png",
+                "contents": [
+                    {
+                        "isAvailable": true,
+                        "image": "fillerAG.png",
+                        "name": "Agapanthus",
+                        "code": "Agaths",
+                        "price": 150.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "fillerAL.png",
+                        "name": "Alliums",
+                        "code": "Ally",
+                        "price": 200.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "fillerBB.png",
+                        "name": "Baby's Breath",
+                        "code": "Babs",
+                        "price": 240.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "fillerBV.png",
+                        "name": "Bouvardia",
+                        "code": "Bovdi",
+                        "price": 230.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "fillerC.png",
+                        "name": "Corn Flower",
+                        "code": "Corn",
+                        "price": 130.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "fillerD.png",
+                        "name": "Daisies",
+                        "code": "Dasy",
+                        "price": 190.00
+                    }
+                ]
+            },
+            {
+                "category": "Line Flowers",
+                "image": "../A04/imgs/navLine.png",
+                "contents": [
+                    {
+                        "isAvailable": true,
+                        "image": "lineA.png",
+                        "name": "Amarathus",
+                        "code": "Amara",
+                        "price": 75.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "lineB.png",
+                        "name": "Bells of Ireland",
+                        "code": "Bela",
+                        "price": 70.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "lineC.png",
+                        "name": "Campanulas",
+                        "code": "Camp",
+                        "price": 130.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "lineE.png",
+                        "name": "Eramurus",
+                        "code": "Era",
+                        "price": 88.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "lineO.png",
+                        "name": "Orchids",
+                        "code": "Orca",
+                        "price": 150.00
+                    }
+                ]
+            },
+            {
+                "category": "Greenery Flowers",
+                "image": "../A04/imgs/navGreenery.png",
+                "contents": [
+                    {
+                        "isAvailable": true,
+                        "image": "greeneryE.png",
+                        "name": "Eucalyptus",
+                        "code": "Euca",
+                        "price": 66.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "greeneryL.png",
+                        "name": "Leather Leaf",
+                        "code": "Leafy",
+                        "price": 86.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "greeneryLG.png",
+                        "name": "Lily Grass",
+                        "code": "Legras",
+                        "price": 90.00
+                    },
+                    {
+                        "isAvailable": true,
+                        "image": "greeneryR.png",
+                        "name": "Ruscus",
+                        "code": "Russ",
+                        "price": 55.00
+                    },
+                ]
+            }
+        ]
+
+        var total = 0;
+
+        function loadCategories() {
+            var categoriesContainer = document.getElementById("categories");
+
+            categoriesContainer.innerHTML = '';
+
+            products.forEach((product, index) => {
+                categoriesContainer.innerHTML += `
+            <div onclick="loadProducts('${index}')" class="card mx-1 custom-button p-3 text-center d-flex align-items-center">
+                <img src="${product.image}" alt="${product.category}" style="width: 30px; height: 30px; margin-bottom: 5px;">
+                <small>${product.category}</small>
+            </div>
+        `;
+            });
+        }
+
+        function loadProducts(categoryIndex) {
+            var maincontainer = document.getElementById("maincontainer");
+            maincontainer.innerHTML = "";
+
+            products[categoryIndex].contents.forEach(content => {
+                maincontainer.innerHTML += `
+
+           <div onclick="addToReceipt('${content.price}' , '${content.code}')" class="card contentCard mx-1 my-2">
+            <img src="../A04/imgs/${content.image}" class="card-img-top" style="height: 130px" alt="Sunflower Flower">
+                <div class="card-body"> 
+                    <p class="card-text"><b>${content.name}</b></p>
+                </div>
+            </div>
+          `;
+            });
+        }
+
+
+        function addToReceipt(price, code) {
+            var receiptContainer = document.getElementById("receipt");
+            total = parseFloat(total) + parseFloat(price);
+
+            totalValueElement = document.getElementById("totalValue");
+            totalValueElement.innerHTML =  `₱ ${total}`;
+
+            receiptContainer.innerHTML += `
+         <div class="d-flex flex-row justify-content-between productOutcome">
+          <div><small>` + code +`</small></div>
+          <div><small>` + price + `</small></div>
+        </div>
+      `;
+        }
+
+        loadCategories();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
