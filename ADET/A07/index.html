@@ -82,6 +82,43 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function fetchTime(timezone, elementIdTime, elementIdDay, elementIdDate, elementIdZone) {
+            const apiUrl = `https://timeapi.io/api/Time/current/zone?timeZone=${timezone}`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const currentTime = data.time
+                    const currentDate = data.date
+                    const currentDay = data.dayOfWeek
+                    const timeZone = data.timeZone
+
+                    document.getElementById(elementIdZone).innerHTML = timeZone;
+                    document.getElementById(elementIdTime).innerHTML = currentTime;
+                    document.getElementById(elementIdDay).innerHTML = currentDay;
+                    document.getElementById(elementIdDate).innerHTML = currentDate;
+
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    document.getElementById(elementIdTime).innerHTML = 'Failed to load time.';
+                    document.getElementById(elementIdDay).innerHTML = 'N/A';
+                    document.getElementById(elementIdDate).innerHTML = 'N/A';
+                });
+        }
+
+
+         fetchTime('Asia/japan', 'current-time-japan', 'current-day-japan', 'current-date-japan', 'current-timezone-japan');
+    fetchTime('Asia/Manila', 'current-time-mnl', 'current-day-mnl', 'current-date-mnl', 'current-timezone-mnl');
+
+    setInterval(() => {
+        fetchTime('Asia/japan', 'current-time-japan', 'current-day-japan', 'current-date-japan', 'current-timezone-japan');
+        fetchTime('Asia/Manila', 'current-time-mnl', 'current-day-mnl', 'current-date-mnl', 'current-timezone-mnl');
+    }, 30000);
+
+
+    </script>
 </body>
 
 </html>
