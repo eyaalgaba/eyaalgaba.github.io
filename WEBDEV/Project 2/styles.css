@@ -80,3 +80,11 @@ overflow-x:hidden;
     text-align: left;
     font-family: "Roboto", sans-serif;
 }
+
+.worldClock {
+    text-align: center;
+    font-size: 5vw;
+    color: #a46b7a;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
